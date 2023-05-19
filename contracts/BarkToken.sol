@@ -18,7 +18,7 @@ contract BarkToken is Initializable, ERC20Upgradeable, ERC20BurnableUpgradeable,
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
     bytes32 public constant UPGRADER_ROLE = keccak256("UPGRADER_ROLE");
 
-    address public constant BURN_ADDRESS = 0xdead;
+    address public constant BURN_ADDRESS = 0x0000000000000000000000000000000000000000;
 
     uint256 private constant SECONDS_IN_MONTH = 30 days;
     uint256 private lastBurnTime;
